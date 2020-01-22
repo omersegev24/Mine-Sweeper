@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+
+    <div class="menu">
+        <button onclick="hintReveal()" class="hint">hints</button>
+        <button onclick="startOver()" class="smile"> <img class="smile-img" src="/img/smile.png"></button>
+        <div class="timer">000</div> 
+    </div>
+    <h4 class="live-counter"><span></span> LIVES LEFT</h4>
+
+
+    <table border = '1' class="board-container">
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="levels">
+        <button onclick="changeLevel(this)" class="btn">Beginner</button>
+        <button onclick="changeLevel(this)" class="btn">Medium</button>
+        <button onclick="changeLevel(this)" class="btn">Expert</button>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/stopWatch.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

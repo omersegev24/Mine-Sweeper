@@ -1,0 +1,93 @@
+* {
+    outline: none;
+    user-select: none;
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Digital Dismay';
+    background-color: cornflowerblue;
+}
+
+table {
+    background-color: rgb(90, 88, 88);
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+}
+
+.cell {
+    border-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    height: 40px;
+    width: 500px;
+    margin: auto;
+    background-color: #C0C0C0;
+    border: 1.5px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    left: 500px;
+}
+
+h3 {
+    margin: 0;
+    display: contents;
+}
+
+.hint, .btn {
+    font-size: medium;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.timer{
+    height: 35px;
+    width: fit-content;
+    display: block;
+    font-family: 'Digital Dismay';
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding: 4px 4px 0 7px;
+    line-height: 1em;
+}
+.center {
+    background-color: orchid;
+}
+
+.smile {
+    background-color: lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+
+.smile-img, .flag {
+    width: 25px;
+    height: 25px;
+}
+
+
+.levels {
+    text-align: center;
+    position: fixed;
+    height: 36px;
+    background-color: #BFBFBF;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
