@@ -1,43 +1,33 @@
-* {
-    outline: none;
-    user-select: none;
-}
-
-
 body {
     text-align: center;
-    font-family: 'Digital Dismay';
-    background-color: cornflowerblue;
+    cursor: default;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 table {
-    background-color: rgb(90, 88, 88);
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 10px auto;
+    border: 1px solid #333;
+    display: inline-block;
+    text-align: center;
 }
 
 .cell {
-    border-color: black;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 1.5em;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    background-color: #59aec7;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    font-size: 1.4em;
     cursor: pointer;
+    color: rgb(2, 6, 71);
+    margin: 0 0.1em 0.1em 0;
 }
 
-.menu {
-    height: 40px;
-    width: 500px;
-    margin: auto;
-    background-color: #C0C0C0;
-    border: 1.5px solid;
-    border-top-color: #ffffff;
-    border-right-color: #7B7B7B;
-    border-bottom-color: #7B7B7B;
-    border-left-color: #ffffff;
-    left: 500px;
+.cell:hover {
+    background-color: white;
 }
 
 h3 {
@@ -45,32 +35,7 @@ h3 {
     display: contents;
 }
 
-.hint, .btn {
-    font-size: medium;
-    background-color: lightgray;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.timer{
-    height: 35px;
-    width: fit-content;
-    display: block;
-    font-family: 'Digital Dismay';
-    font-size: 35px;
-    letter-spacing: 1px;
-    color: red;
-    background-color: black;
-    text-align: center;
-    padding: 4px 4px 0 7px;
-    line-height: 1em;
-}
-.center {
-    background-color: orchid;
-}
-
-.smile {
-    background-color: lightgray;
+.smile .btn {
     text-align: center;
     cursor: pointer;
 }
@@ -80,14 +45,45 @@ h3 {
     height: 25px;
 }
 
+.opened {
+    background-color: whitesmoke;
+}
 
-.levels {
+.btn {
+    width: fit-content;
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
     text-align: center;
-    position: fixed;
-    height: 36px;
-    background-color: #BFBFBF;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.btn {
+    margin: 0.4em auto;
+}
+
+.timer, .live-counter {
+    margin-right: 30px;
+    color: #FFFFFF;
+    border-left: 1px white;
+}
+.live-counter span{
+    color: red;
+}
+.timer span{
+   color: red 
+}
+.show{
+    background-color: pink;
 }
