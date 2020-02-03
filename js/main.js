@@ -1,7 +1,7 @@
 'use strict';
 var MINES = '*';
 var EMPTY = ' ';
-var FLAG = '<img class="flag" src="/img/flag.png">';
+var FLAG = '<img class="flag" src="img/flag.png">';
 
 var gFirstClick = true;
 var gBoard = [];
@@ -178,9 +178,9 @@ function gameOver() {
     }
     var elSmile = document.querySelector('.smile');
     if (!gGame.isWin) {
-        elSmile.innerHTML = '<img class="smile-img" src="/img/lose-smile.png">';
+        elSmile.innerHTML = '<img class="smile-img" src="img/lose-smile.png">';
     } else {
-        elSmile.innerHTML = '<img class="smile-img" src="/img/win-smile.png">';
+        elSmile.innerHTML = '<img class="smile-img" src="img/win-smile.png">';
     }
 }
 
@@ -218,7 +218,7 @@ function startOver() {
     gWatch.stop();
     gWatch.reset();
     var elSmile = document.querySelector('.smile');
-    elSmile.innerHTML = '<img class="smile-img" src="/img/smile.png">';
+    elSmile.innerHTML = '<img class="smile-img" src="img/smile.png">';
     initGame();
 }
 
