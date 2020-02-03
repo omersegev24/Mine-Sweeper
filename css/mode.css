@@ -1,0 +1,20 @@
+/* @media (prefers-color-scheme: dark) {
+    .dark-mode {
+        background-color: white;
+        color: black;
+    }
+    .cell-dark-mode {
+        background-color: #7f00f7;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        color: rgb(236, 236, 236);
+    }
+    .btn-dark-mode {
+        border: 0.1em solid #000000;
+        color: #000000;
+    }
+    .btn-dark-mode:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+} */

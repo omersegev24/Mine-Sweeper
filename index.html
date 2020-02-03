@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mine Sweeper</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mode.css">
 </head>
 
 <body onload="initGame()">
@@ -23,8 +24,8 @@
         <a onclick="revealBtn(this)" class="hint btn">hints <span></span></a>
         <a onclick="safeClick(this)" class="safe btn">safe click <span></span></a>
         <a onclick="setManuallyMode(this)" class="btn">CUSTOM MINE</a>
-
-
+        <a class="btn undo" onclick="undo()">UNDO</a>
+        
     </div>
     <table class="board-container">
         <tbody>
